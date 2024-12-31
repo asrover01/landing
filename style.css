@@ -5,15 +5,38 @@ grid-template-columns: 1fr;
 justify-items: center;
 width:100%;
 }
+
 .main{
 display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 h1, p{
   background-color:whitesmoke;
-  width:fit-content ;
-  
-
-  
+  width:fit-content ;  
 }
+
+.hlinks li{
+    display:inline-flex;
+    border-radius:15px;
+    box-shadow:0 9px grey;
+    margin:12px;
+    padding:5px;
+    border:1px solid black;
+    text-decoration: none;
+    flex-direction: row;
+    background-color: antiquewhite;  
+  }
+
+  .hlinks li:hover{
+    cursor:pointer;
+    color:black;
+    background-color: cadetblue;
+  }
+
+ .hlinks li:active{
+    background-color:darkblue;
+    box-shadow:0 1px black;
+    color:white;  
+  }
