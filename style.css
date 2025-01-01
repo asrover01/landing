@@ -29,7 +29,8 @@ h1, p{
     border:1px solid black;
     text-decoration: none;
     flex-direction: row;
-    background-color: antiquewhite;  
+    background-color: antiquewhite; 
+  width:45%;
   }
 
   .hlinks li:hover{
