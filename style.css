@@ -12,6 +12,8 @@ display: flex;
   flex-direction: column;
   align-items: center;
 }
+a{
+  width:45%;
 h1, p{
   background-color:whitesmoke;
   width:fit-content ;  
