@@ -19,22 +19,19 @@ body{
         width: 50%;
               
     }
-    .hlinks{
-        display: flex;
-        flex-wrap: wrap;
+
+.hlinks{
+      display: flex;
+      justify-content: center;
+      margin-top: 5vw;
     }
-     a{
-        display: inline-flex;
-        flex-direction: row;
-        justify-items:first baseline;
-        justify-content:space-evenly;
+
+     a{ 
       background-color: bisque;
-        margin: 5%;
+        margin: 2%;
         padding: 2%;
-        width:30%;
-        border-radius: 5px;
-        font-size: 3rem;
-        
+        width:20%;
+        border-radius: 5px;    
     }
     
       a:hover{
