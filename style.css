@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-image: url(https://images.unsplash.com/photo-1650600538903-ec09f670c391?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);   
     width:100%;
@@ -10,53 +11,71 @@ body{
       text-align: center;
       background-repeat: no-repeat;
 }
-    .main{
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        font-size: 2rem;
-        background-color: whitesmoke;
-        width: 50%;
-              
-    }
-    .hlinks{
-      display: flex;
-      justify-content: center;
-      margin-top: 5vw;
-    }
-     a{
-       
-      background-color: bisque;
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  width: 50%;
+        
+}
+
+.menubox{
+  display: flex;
+
+}
+
+.codeMenu, .frontMenu{
+  display: none;
+}
+
+.codecademy:hover .codeMenu{
+  display:flex;
+  flex-direction: column;
+}
+
+.frontend:hover .frontMenu{
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  width: 45%;
+  justify-items: center;
+  margin-top: 10vw;
+}
+
+.code{
+  background-color: bisque;
         margin: 2%;
         padding: 2%;
-        width:20%;
-        border-radius: 5px;
         
-    }
-    
-      a:hover{
-        cursor:pointer;
-        color:black;
-        background-color: cadetblue;
-      }
-    
-     a:active{
-        background-color:darkblue;
-        box-shadow:0 1px black;
-        color:white;  
-      }
+        border-radius: 10px;
+        box-shadow: 2px 5px whitesmoke;
+}
 
-      @media only screen and (max-width:900px) and (orientation:portrait) {
-  a{
-        width: 90%;
-        height: 9rem;
-        font-size: 3rem;
-        align-content: center;
-      
-     
-    }
-    .hlinks{
-      display: flex;
-      flex-direction: column;
-    }
-      }
+.codeMenu, .FrontMenu{
+  background-color: whitesmoke;
+  width: fit-content;
+  
+}
+
+a{
+  padding: 5px;
+  line-height: 30px;
+}
+
+p{
+  font-weight: bolder;
+}
+@media only screen and (max-width:900px){
+  .menubox, .submenu{
+    display: flex;
+    flex-direction: column;
+  }
+ .main, .code{
+    width: 95%;
+  }
+}
