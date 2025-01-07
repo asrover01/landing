@@ -81,6 +81,13 @@ p{
   font-weight: bolder;
 }
 @media only screen and (max-width:600px){
+    *{
+    font-size: 4vw;
+  }
+  .code{
+    height: 10vw;
+    font-size: 4vw;
+  }
   .menubox, .submenu{
     display: flex;
     flex-direction: column;
