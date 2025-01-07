@@ -7,7 +7,7 @@
 body{
     background-image: url(https://images.unsplash.com/photo-1650600538903-ec09f670c391?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);   
     width:100%;
-      height:auto;
+      height:100vw;
       text-align: center;
       background-repeat: no-repeat;
 }
@@ -56,21 +56,26 @@ body{
         box-shadow: 2px 5px whitesmoke;
 }
 
-.codeMenu, .FrontMenu{
+.codeMenu, .FrontMenu, .submenu {
   background-color: whitesmoke;
-  width: fit-content;
+  width: 100%;
   
 }
-
+.submenu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 a{
   padding: 5px;
   line-height: 30px;
+  border: 1px solid black;
 }
 
 p{
   font-weight: bolder;
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:600px){
   .menubox, .submenu{
     display: flex;
     flex-direction: column;
