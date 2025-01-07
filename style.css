@@ -65,6 +65,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+    gap:2px;
 }
 a{
   padding: 5px;
