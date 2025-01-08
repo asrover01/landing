@@ -65,6 +65,7 @@ body{
 .codeMenu, .FrontMenu, .submenu {
   background-color: whitesmoke;
   width: 100%;
+    border-radius:10px;
   
 }
 .submenu{
