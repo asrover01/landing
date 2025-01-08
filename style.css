@@ -17,10 +17,12 @@ body{
   display: flex;
   flex-direction: column;
   justify-self: center;
-  font-size: 2rem;
   background-color: whitesmoke;
   width: 50%;
         
+}
+.header h1, p{
+  font-size: 4vw;
 }
 
 .menubox{
@@ -80,13 +82,25 @@ a{
 p{
   font-weight: bolder;
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:600px){
   *{
     font-size: 4vw;
   }
-  .code{
+  .header{
+    width: 100%;
+  }
+  .header h1, p{
+    font-size: 8vw;
+  }
+  .menubox p{
+    background-color: bisque;
+  }
+  .code {
     height: 10vw;
     font-size: 4vw;
+  }
+  a{
+    font-size: 5vw;
   }
   .menubox, .submenu{
     display: flex;
