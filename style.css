@@ -30,7 +30,7 @@ body{
 flex-wrap: wrap;
 }
 
-.codeMenu, .frontMenu, .freecodecamp{
+.codeMenu, .frontMenu, .freeCodeCamp{
   display: none;
 }
 
@@ -44,7 +44,7 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: column;
 }
-.freecodecamp:hover .freecodecampMenu{
+.freeCodeCamp:hover .freeCodeCampMenu{
   display: flex;
   flex-direction: column;
 }
