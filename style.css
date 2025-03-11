@@ -27,7 +27,7 @@ body{
 
 .menubox{
   display: flex;
-
+flex-wrap: wrap;
 }
 
 .codeMenu, .frontMenu, .freecodecamp{
