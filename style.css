@@ -30,7 +30,7 @@ body{
 
 }
 
-.codeMenu, .frontMenu{
+.codeMenu, .frontMenu, .freecodecamp{
   display: none;
 }
 
@@ -44,7 +44,10 @@ body{
   display: flex;
   flex-direction: column;
 }
-
+.freecodecamp:hover .freecodecampMenu{
+  display: flex;
+  flex-direction: column;
+}
 .main{
   width: 45%;
   justify-items: center;
