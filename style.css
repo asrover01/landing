@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 2vw;
+  
 }
 
 body{
@@ -17,20 +18,23 @@ body{
 display: flex;
 flex-direction: column;
 justify-self: center;
-background-color: whitesmoke;
+background-color: rgb(233, 230, 230);
 color:black;
-width: 50%;
+width: 70vw;
 }
 .header h1, p{
 font-size: 6vw;
 }
 .button{
-  background-color: bisque;
+  background-color: rgb(227, 203, 175);
   width: 80%;
   height: 3em;
   font-size:2rem;
   margin: 1rem 0;
   font-family:sans-serif;
+}
+.button:hover{
+  background-color: burlywood;
 }
 
 .link-menu{
@@ -39,31 +43,35 @@ font-size: 6vw;
   background-color: rgba(109, 108, 135, 0.751);
   margin: 5px;
   font-size:2rem;
-  padding-bottom: 5px;
+  padding: 5px 0;
   
 }
 .hide{
   display:none;
 }
 .link-menu p {
-  background-color: white;
+  background-color: rgb(233, 230, 230);
   width:fit-content;
   margin: 0 auto;
   font-weight:bold;
-  padding: 0 1rem
+  padding: 0 1rem;
+  
 }
 
 .link-menu a{
   display: flex;
   font-size:2rem;
   margin: 1vw;
-  color:blue;
+  color:rgb(0, 0, 12);
   text-decoration: none;
-  border: 1px solid black;
-  background-color: bisque;
+  border: 3px solid blue;
+  background-color: rgb(227, 203, 175);
   padding: 2px 5px;
   justify-content: center;
   
+}
+.link-menu a:hover{
+  background-color: burlywood;
 }
 .link-menu, .link-menu a, .link-menu p, .button{
   border-radius: 20px;
