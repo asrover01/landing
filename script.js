@@ -5,7 +5,7 @@ const freeCodeCampButton = document.getElementById("freecodecamp-button");
 
 const codeCademyLinks = document.getElementById("codecademy-links");
 const frontEndLinks = document.getElementById("front-end-links");
-const freeCodeCampLinks = document.getElementById("freeCodeCamp-links")
+const freeCodeCampLinks = document.getElementById("freeCodeCamp-links");
 
 const allButtons = document.getElementsByClassName("button")
 const linkMenus = document.getElementsByClassName("link-menu");
@@ -13,6 +13,10 @@ const linkMenus = document.getElementsByClassName("link-menu");
 let codeCademyVisible = false;
 let frontEndVisible = false;
 let freeCodeCampVisible =false;
+
+codeCademyButton.addEventListener("click",codeCademyDisplay)
+frontEndButton.addEventListener("click", frontEndDisplay);
+freeCodeCampButton.addEventListener("click",freeCodeCampDisplay)
 
 function codeCademyDisplay(){
     if (!codeCademyVisible){
@@ -28,10 +32,10 @@ function codeCademyDisplay(){
     }
     if (freeCodeCampVisible){
     freeCodeCampLinks.classList.add("hide")
-    freeCodeCampVisible =false
+    freeCodeCampVisible =false;
     }
 }
-codeCademyButton.addEventListener("click",codeCademyDisplay)
+
 
 function frontEndDisplay(){
     if (!frontEndVisible){
@@ -39,34 +43,36 @@ function frontEndDisplay(){
     frontEndVisible =true;
     } else {
         frontEndLinks.classList.add('hide');
-    frontEndVisible =false
+    frontEndVisible =false;
     }
-    if (codeCademyLinks.classList !== "hide"){
+    if (codeCademyVisible){
     codeCademyLinks.classList.add("hide");
+    codeCademyVisible=false;
     }
-    if (freeCodeCampLinks.classList !== "hide"){
+    if (freeCodeCampVisible){
     freeCodeCampLinks.classList.add("hide");
+    freeCodeCampVisible= false;
     }
 }
-frontEndButton.addEventListener("click", frontEndDisplay);
+
 function freeCodeCampDisplay(){
     if (!freeCodeCampVisible){
     freeCodeCampLinks.classList.remove('hide');
-    freeCodeCampVisible=true
+    freeCodeCampVisible=true;
     } else {
         freeCodeCampLinks.classList.add('hide');
-        freeCodeCampVisible=false
+        freeCodeCampVisible=false;
     }
-    if (codeCademyLinks.classList !== "hide"){
+    if (codeCademyVisible){
     codeCademyLinks.classList.add("hide");
     codeCademyVisible=false;  
     }
-    if (frontEndLinks.classList !== "hide"){
+    if (frontEndVisible){
         frontEndLinks.classList.add("hide");
         frontEndVisible = false;
         }
 }
-freeCodeCampButton.addEventListener("click",freeCodeCampDisplay)
+
 
 
 
